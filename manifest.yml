@@ -1,0 +1,13 @@
+applications:
+- path: target/JavaHelloWorldApp.war
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: ChatZeroTest
+  host: ChatZeroTest
+  disk_quota: 1024M
+  services:
+  - Conversation-cd
+  - Speech to Text-xw
+  - Text to Speech-z7
+  - availability-monitoring-auto
